@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="mediaqueries.css" />
+  </head>
+  <body>
+    <nav id="desktop-nav">
+      <div>
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#resume">Resume</a></li>
+          <li><a href="#contact">Contact</a></li>
+      
+        </ul>
+      </div>
+    </nav>
+    <nav id="hamburger-nav">
+      <div class="hamburger-menu">
+        <div class="hamburger-icon" onclick="toggleMenu()">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <div class="menu-links">
+          <li><a href="#about" onclick="toggleMenu()">About</a></li>s
+          <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+          <li><a href="#resume" onclick="toggleMenu()">Resume</a></li>
+          <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+        </div>
+      </div>
+    </nav>
+
+
+    <!--PROFILE SECTION-->
+    <section id="profile">
+      <div class="section__text">
+        <p class="section__text__p">&nbsp;&nbsp;&nbsp;Hello, I'm</p>
+        <h1 class="titlename">Gian Cyril</h1>
+        <p class="section__text__p2">&nbsp;I am currently learning programming while pursuing &nbsp;my passion to become a creature design artist.</p>
+        <div class="btn-container">
+          <button class="btn btn-color-1" onclick="scrollToSection('about')">About Me</button>
+
+        </div>
+        
+      </div>
+      <div class="section__pic-container">
+        <img src="./image/profile-pic.jpg" alt="Gian Cyril profile picture" />
+      </div>     
+    </section>
+
+      <!--ABOUT SECTION-->
+      <section id="about">
+        <p class="section__text__p1">Things about me</p>
+        <h1 class="title">About Me</h1>
+        <div class="section-container">
+          <div class="section__pic-container">
+            <img
+              src="./image/about-pic.png"
+              alt="Profile picture"
+              class="about-pic"
+            />
+          </div>
+          <div class="about-details-container">
+            <div class="about-containers">
+              <div class="text-container">
+                <br>
+                <br>
+                <br>
+                <p> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                  As an aspiring game developer and creature design enthusiast, 
+                  I'm on an exhilarating journey fueled by an insatiable curiosity for technology and a profound 
+                  love for crafting imaginative worlds. I channel my passion for programming into mastering various 
+                  languages and frameworks while honing my artistic skills to breathe life into unique, fantastical creatures. 
+                  My goal is to blend these disciplines, crafting captivating gaming experiences that transport players into 
+                  immersive, mesmerizing universes. Join me as I embark on this thrilling adventure of melding code and 
+                  creativity, aiming to redefine the boundaries of digital storytelling.
+                </p>
+              </div>
+              <div class="details-container-education">
+                <img
+                  src="./image/education.png"
+                  alt="Education icon"
+                  class="icon"
+                />
+                <h3>Education</h3>
+                <p>Northern Bukidnon State College</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      
+      </section>
+      
+
+    <!--PROJECT SECTION-->
+    </section>
+    <section id="projects">
+      <p class="section__text__p1">My Recent</p>
+      <h1 class="title">Projects</h1>
+      <div class="experience-details-container">
+        <div class="about-containers">
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                src="./image/project-1.jpg"
+                alt="Project 1"
+                class="project-img"
+              />
+            </div>
+            <h2 class="experience-sub-title project-title">Bouncing Balls</h2>
+            <div class="btn-containe-project">
+              <a href="https://github.com/Giancyril/Bouncing-Ball/" target="_blank" rel="noopener noreferrer">
+              <button class="btn btn-color-2 project-btn" >Github
+              </button>      
+            </div>
+          </div>
+
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                src="./image/project-2.jpg"
+                alt="Hover Icon"
+                class="project-img"
+              />
+            </div>           
+            <h2 class="experience-sub-title project-title">Hover Icon</h2>
+            <div class="btn-container-project">
+              <a href="https://github.com/Giancyril/Hover-Icon/" target="_blank" rel="noopener noreferrer">
+                <button class="btn btn-color-2 project-btn">Github</button>
+              </a>            
+            </div>
+          </div>         
+
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                src="./image/project-3.png"
+                alt="Project 3"
+                class="project-img"
+              />
+            </div>
+            <h2 class="experience-sub-title project-title">Java Calculator</h2>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!--RESUME SECTION-->
+    <section id="resume">
+      <p class="section__text__p1">View my</p>
+      <div class="resume-details-container">
+        <div class="about-containers">
+          <div class="details-container">
+            <h2 class="resume-sub-title">Resume</h2>
+            <div class="article-container">
+                  <h3>Personal Information</h3>
+                  <li>Name: Gian Cyril Mijares</li>
+                  <li>Age: 20 years old</li>
+                  <li>Address: Address: PCH - 2, San Miguel, Manolo Fortich</li>  
+                  <br>
+
+                  <h3>Contact Information</h3>
+                  <li>Email: mijaresgiancyril@gmail.com</li>
+        <li>Phone Number: 09317576632</li>
+        <br>
+        <h3>Education</h3>
+        <li>Bachelor of Science in Information Technology</li>
+        <li>Northern Bukidnon State College</li>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    
+
+
+<!--CONTACT SECTION-->
+    <section id="contact">
+      <p class="section__text__p1">My</p>
+      <h1 class="title">Contact Info</h1>
+      <div class="contact-info-upper-container">
+        <div class="contact-info-container">
+          <img
+            src="./image/email.png"
+            alt="Email icon"
+            class="icon contact-icon email-icon"
+          />
+          <p><a href="mijaresgiancyril@gmail.com">mijaresgiancyril@gmail.com</a></p>
+        </div>
+        <div class="contact-info-container">
+          <img
+            src="./image/facebook.png"
+            alt="Facebook icon"
+            class="icon contact-icon facebook-icon"
+          />
+          <p><a href="Gian Aech Mijares">Gian Cyril Mijares &nbsp; </a></p>
+        </div>
+      </div>
+    </section>
+
+    
+      
+    <footer>
+      <p>Thank you for visit.</p>
+    </footer>
+    <script>
+      function scrollToSection(sectionId) {
+        const section = document.getElementById(sectionId);
+        if (section) {
+          section.scrollIntoView({ behavior: 'smooth' });
+        }
+      }
+    </script>
+    <script src="script.js"></script>
+  </body>
+</html>
