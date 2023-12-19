@@ -1,59 +1,76 @@
 body {
     background-image: url('/image/background-pic.jpg');
     margin: 0;
-    font-family: "Poppins", sans-serif;
+    font-family: "Verdana", "Georgia";
     font-weight: bold;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    height: 80vh;
+    height: 100vh; /* Adjusted to 100vh for full viewport height */
+    background-size: cover; /* Ensures the entire background image is visible */
+    background-repeat: no-repeat; /* Prevents the background image from repeating */
 }
+
     .center{
     
         text-align: center;
       }
       .center .title{
         color: white;
-        font-size: 75px;
+        font-size: 70px;
         font-weight: 600;
         margin-bottom: 15px;
       }
       .center .sub_title{
         color: white;
-        font-size: 55px;
+        font-size: 45px;
         font-weight: 600;
         margin-bottom: 20px;
       }
-      .btns button {
-        height: 55px;
-        width: 170px;
-        border-radius: 5px;
-        border: 2px solid white;
-        font-size: 15px;
-        font-weight: 500;
-        margin: 0 30px; /* Adjust vertical spacing between buttons */
-        cursor: pointer;
-        outline: none;
-        transition: all 0.3s ease;
-    }
-    
-    .btns button:first-child {
-        color: white;
-        background: none;
-    }
-    
-    .btns button:first-child:hover {
-        background: black;
-        color: white;
-    }
-    
-    .btns button:last-child {
-        color: white;
-        background: none;
-    }
-    
-    .btns button:last-child:hover {
-        background: white;
-        color: black;
-    }
+     .container {
+  position: relative;
+  width: 200px; /* Initial size of the container */
+  height: 200px; /* Initial size of the container */
+  margin: 0 auto; /* Centers the container */
+  transition: width 0.5s ease, height 0.5s ease; /* Transition for size change */
+}
+
+.container:hover {
+  width: 220px; /* Increase width on hover */
+  height: 220px; /* Increase height on hover */
+}
+
+.image {
+  display: block;
+  width: 100%; /* Adjust the size as needed */
+  height: 100%; /* Set the same height as width for a perfect circle */
+  margin: 0 auto; /* Centers the image within the container */
+  border-radius: 50%; /* Makes the image circular */
+  object-fit: cover; /* Helps maintain aspect ratio within the circular shape */
+  transition: transform 0.5s ease; /* Transition for the size change */
+}
+
+.container:hover .image {
+  transform: scale(1.1); /* Increase size on hover */
+  filter: blur(4px); /* Add blur on hover */
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  width: 100%; /* Adjust the size as needed */
+  height: 100%; /* Set the same height as width for a perfect circle */
+  margin: 0 auto; /* Centers the image within the container */
+  border-radius: 50%; /* Makes the image circular */
+  object-fit: cover; 
+  opacity: 0;
+  transition: .5s ease;
+}
+
+.overlay:hover {
+  opacity: 0.7; /* Adjust the opacity as desired on hover */
+}
